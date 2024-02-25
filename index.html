@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>First-web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="Style.CSS"> -->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(210, 216, 217);
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #0bb9f3;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #5f793b44;
+            height: 300px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: rgb(40, 3, 3);
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid-sm-mt-lg">
+        <div class="row">
+            <div class="col-lg-12" style="background-color: rgb(11, 69, 101); height: 100px;">
+                <marquee behavior="DEV" direction="REVIEW"></marquee>
+
+                <img src="assist/Assist 01.png" style="color:burlywood;" alt="dev" height="55px">
+
+
+
+
+
+
+                <ul class="nav">
+
+
+                </ul>
+
+                <p class="text-center"></p>
+                <ul class="nav justify-content-center">
+
+
+                    <li class="nav-item">
+
+
+                    </li>
+                </ul>
+
+
+                <ul class="nav justify-content-end">
+
+            </div>
+
+            <button type="button" class="btn">ABOUT US</button>
+            <button type="button" class="btn btn-primary">FEATURES</button>
+            <button type="button" class="btn btn-secondary">REVIEW</button>
+            <button type="button" class="btn btn-success">SUCCESS</button>
+            <button type="button" class="btn btn-info">INFORMATION</button>
+            <button type="button" class="btn btn-warning">PRODUCT</button>
+            <button type="button" class="btn btn-danger">COLOR</button>
+            <button type="button" class="btn btn-dark">DESIGN</button>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="row">
+        <img src="assist/Assist 02.jpg" height="100%" width="100%" style="color: rgb(222, 78, 78); width: 100%; ">
+
+        <style>
+            .container {
+                position: fixed;
+                font-family: 'Times New Roman', Times, serif;
+
+            }
+
+            .text-block {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                /* background-color: rgb(22, 201, 99); */
+                /* color: rgb(54, 3, 3); */
+                /* margin-left: 10px; */
+                padding-left: 25px;
+                padding-right: 1000px;
+                margin-right: 40px;
+                text-align: center;
+                margin: -200px;
+                text-shadow: 100cap;
+
+
+            }
+        </style>
+
+        <div class="text-block">
+            <h1>NEXT LEVEL OF SOUND EXPERIENCE</h1>
+            <p>
+            <h2> This headphones are electronic audio device that people wear over their ears. They let people hear sounds on a look like a wow. 
+            </h2>
+            </p>
+        </div>
+
+    </div>
+
+
+    <img src="assist/Assist 03.jpg" height="100%" width="100%" style="color: rgb(222, 78, 78);">
+    <!-- <img src="assist/Assist 01.png" style="color: rgb(125, 63, 63);" alt="error"> -->
+
+
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .column img {
+            margin-top: 15px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .parent-container {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            /* sets up 3 rows of equal height */
+            grid-row-gap: 20px;
+            /* sets the vertical gap between all rows to 20px */
+        }
+
+        .selected-row {
+            grid-row: 2;
+            /* target the second row (index starts at 1) */
+            margin-top: 30px;
+            /* add a margin to the top of the selected row to increase the gap */
+            margin-bottom: 10px;
+            /* add a margin to the bottom of the selected row to decrease the gap with the following row */
+        }
+
+        hr {
+            height: 1px;
+            /* adjust the height to reduce the line thickness */
+            width: 50%;
+            /* adjust the width to reduce the line length */
+        }
+    </style>
+
+    <body>
+
+        <!-- Header  -->
+        <div class="header" style="background-color: rgb(77, 31, 89); text-decoration-color: coral;">
+
+            <h1>Product view</h1>
+        </div>
+
+
+
+        <!-- Photo Grid -->
+
+        <div class="row">
+            <div class="row" style="background-color: rgba(11, 233, 196, 0.384);"> 
+
+                <img src="assist/Assist 07.jpg" style="width:34%">
+                <img src="assist/Assist 08.jpg" style="width:33%">
+                <img src="assist/Assist 09.jpg" style="width:33%">
+                <img src="assist/Assist 17.png" style="width:333%"> </div>
+            </div>
+
+        </div>
+
+
+        </div>
+
+        </div>
+        </div>
+        <div class="container">
+            <div class="row"></div>
+            <img src="assist/Assist 16.jpg" height="50%" width="10px">
+        </div>
+        </div>
+
+        </div>
+
+
+        </div>
+        <style>
+            .image-container {
+                position: relative;
+                display: inline-block;
+            }
+
+            .image-container img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            .overlay-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-80%, -65%);
+                /* background-color: #b9acac;  */
+                color: #08413cf9;
+                padding: 10px 20px;
+                font-size: 25px;
+                text-align: center;
+        </style>
+        <div class="image-container">
+            <img src="assist/Assist 16.jpg" height="50%" width="1511px">
+            <div class="overlay-text">The best product on the market, just for you.
+                this product has comfortable sound with hearing quality good <br>
+                easy to carray on your beg or your neck. <br>This is product only make for history.
+
+            </div>
+        </div>
+
+        </div>
+
+        <div class="row">
+            <div class="row" style="background-color: rgb(225, 140, 183);">
+
+                <img src="assist/Assist 25.png" style="width:30%">
+                <img src="assist/Assist 26.png" style="width:30%">
+                <img src="assist/Assist 27.png" style="width:34%">
+
+            </div>
+
+
+
+            <header>
+                <h2><img src="assist/Assist 01.png" style="background-color: #150202;" alt="eroor "></h2>
+            </header>
+
+            <section>
+                <nav>
+                    <ul>
+                        <li><a href="#" target="_blank">google</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </nav>
+
+                <article>
+                    <h1>Bhopal</h1>
+                    <p>Bhopal is the capital city of the Indian state of Madhya Pradesh and the administrative
+                        headquarters of both Bhopal district and Bhopal division.It is known as the City of Lakes,due to
+                        presence of various natural and artificial lakes. It is also one of the greenest cities in
+                        India.</p>
+                </article>
+            </section>
+
+            <footer>
+                <p><i>Web-Developer dev</i></p>
+            </footer>
+
+
+
+
+
+
+
+    </body>
+
+</html>
